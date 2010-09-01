@@ -1,0 +1,299 @@
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMembers (20100901035151)
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "twitter_id" integer, "screen_name" varchar(255), "token" varchar(255), "secret" varchar(255), "profile_image_url" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100901035151')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("members")[0m
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-08-31 21:54:54) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (0.8ms)
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-08-31 21:55:01) [GET]
+Failed to login via OAuth
+Redirected to http://localhost:3002/
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 358ms (DB: 0) | 302 Found [http://localhost/members/new]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-08-31 21:55:01) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (0.7ms)
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-08-31 21:55:44) [GET]
+Failed to login via OAuth
+Redirected to http://localhost:3002/
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 518ms (DB: 0) | 302 Found [http://localhost/members/new]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-08-31 21:55:45) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (0.8ms)
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMembers (20100901035151)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("members")[0m
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-08-31 22:01:28) [GET]
+
+
+CGI::Session::CookieStore::TamperedWithCookie (CGI::Session::CookieStore::TamperedWithCookie):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session/cookie_store.rb:145:in `unmarshal'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session/cookie_store.rb:102:in `restore'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/cgi/session.rb:312:in `[]'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/cgi_process.rb:98:in `session'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/cgi_process.rb:130:in `stale_session_check!'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/cgi_process.rb:78:in `session'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1205:in `assign_shortcuts_without_flash'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:519:in `process_without_filters'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    -e:2:in `load'
+    -e:2
+
+Rendered /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (236.1ms)
+Rendered /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (1.5ms)
+Rendering /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-08-31 22:02:12) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (0.8ms)
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-08-31 22:02:21) [GET]
+Failed to login via OAuth
+Redirected to http://localhost:3002/
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 212ms (DB: 0) | 302 Found [http://localhost/members/new]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-08-31 22:02:22) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (0.8ms)
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-08-31 22:09:04) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (0.8ms)
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-08-31 22:09:16) [GET]
+Failed to login via OAuth
+Redirected to http://localhost:3002/
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 172ms (DB: 0) | 302 Found [http://localhost/members/new]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-08-31 22:09:16) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (0.8ms)
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (78.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMembers (20100901035151)
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "twitter_id" integer, "screen_name" varchar(255), "token" varchar(255), "secret" varchar(255), "profile_image_url" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (2.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100901035151')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("members")[0m
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-08-31 22:12:01) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (0.8ms)
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-08-31 22:12:03) [GET]
+Failed to login via OAuth
+Redirected to http://localhost:3002/
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 173ms (DB: 0) | 302 Found [http://localhost/members/new]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-08-31 22:12:04) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (0.8ms)
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-08-31 22:12:05) [GET]
+Failed to login via OAuth
+Redirected to http://localhost:3002/
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 99ms (DB: 0) | 302 Found [http://localhost/members/new]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-08-31 22:12:05) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (0.7ms)
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-08-31 22:12:06) [GET]
+Failed to login via OAuth
+Redirected to http://localhost:3002/
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 96ms (DB: 0) | 302 Found [http://localhost/members/new]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-08-31 22:12:07) [GET]
+Failed to login via OAuth
+Redirected to http://localhost:3002/
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 107ms (DB: 0) | 302 Found [http://localhost/members/new]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-08-31 22:12:07) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (0.8ms)
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-08-31 22:15:23) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (0.7ms)
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-08-31 22:15:25) [GET]
+Failed to login via OAuth
+Redirected to http://localhost:3002/
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 178ms (DB: 0) | 302 Found [http://localhost/members/new]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-08-31 22:15:25) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (1.9ms)
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-08-31 22:17:18) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (0.7ms)
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-08-31 22:17:22) [GET]
+Redirected to http://twitter.com/oauth/authorize?oauth_token=a1GmDJy0xgAn8Vh0UY82sUibL6eKC3alwrMSb8vxcA
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 213ms (DB: 0) | 302 Found [http://localhost/members/new]
