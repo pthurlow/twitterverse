@@ -1,0 +1,18 @@
+=  Twitterverse
+
+== Description
+
+A Visualization of a Twitter user's connections, using paul gallagher's initial twitter oauth rails setup (http://github.com/tardate/rails-twitter-oauth-sample)
+
+== Version and change log
+
+* 1.0 - initial release
+
+== Required gems
+
+These need to be installed in addition to all standard gems required by rails:
+
+* json (1.1.6)
+* oauth (0.4.0)
+
+For heroku deployment, these are specified in the .gems file in the root of the project
