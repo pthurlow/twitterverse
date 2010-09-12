@@ -4,6 +4,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :members,
     :collection => { :callback => :get },
     :member => { 
+      :show_graph => :get,
+      :get_quote => :get,
       :update_status => :post, 
       :partialfriends => :get, 
       :partialfollowers => :get, 

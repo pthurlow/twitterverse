@@ -137,6 +137,14 @@ end
     return
   end
 
+  def statuses(user, count)
+    self.twitagent.statuses(user, count)
+  rescue => err
+    RAILS_DEFAULT_LOGGER.error "Failed to get statuses via OAuth for #{current_user.inspect}"
+    flash[:error] = "Twitter API failure (getting statuses)"
+    return
+  end
+
   # Twitter REST API Method: statuses friends
   def friends(user=nil)
     self.twitagent.friends(user)

@@ -29,6 +29,49 @@ class MembersController < ApplicationController
     end
   end
 
+  def show_graph
+    if (request.xhr?)
+      friends = self.friends()
+      @candidates = []
+      friends.each do |friend|
+        if (friend['statuses_count'] > 50)
+          @candidates << friend
+        end
+      end
+      if (@candidates.empty?)
+        flash[:error] = 'not enough friends with status messages'
+        raise 'not enough friends'
+      end
+      @statuses = self.statuses(@candidates[0]['id'], 5)
+      session[:game_id] = @candidates[0]['id']
+      session[:game_quote_index] = 1
+      render :partial => 'members/game', :layout => false
+    else
+      flash[:error] = 'method only supporting XmlHttpRequest'
+      member_path(@member)
+    end
+  rescue => err
+    render :text => err, :status => 500
+  end
+
+  def get_quote
+    if (request.xhr?)
+      friend_id = session[:game_id]
+      quote_index = session[:game_quote_index]
+      statuses = self.statuses(friend_id, 6)
+      puts quote_index
+      if (quote_index < 5)
+        puts quote_index
+        @quote = statuses[quote_index]['text']
+        session[:game_quote_index] = quote_index + 1
+      end
+      render :partial => 'members/quote', :layout => false
+    else
+      flash[:error] = 'method only supporting XmlHttpRequest'
+      member_path(@member)
+    end
+  end
+
   def update_status
     if self.update_status!(params[:status_message])
       flash[:notice] = 'status update sent'

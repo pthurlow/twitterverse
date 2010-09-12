@@ -142,6 +142,20 @@ class TwitterOauth
     puts "Exception in user: #{err}"
     raise err
   end
+  
+  def statuses(user, count)
+    response = access_token.get("/statuses/user_timeline.json?user_id=#{user}&count=#{count}")
+    case response
+    when Net::HTTPSuccess
+      statuses=JSON.parse(response.body)
+    else
+      raise TwitterOauth::APIError
+    end
+    statuses
+  rescue => err
+    puts "Exception in user: #{err}"
+    raise err
+  end
 
   # Twitter REST API Method: statuses friends
   # Returns: array of all friends for the given user

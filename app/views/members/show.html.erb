@@ -1,61 +1,29 @@
-<div id="userdetails">
-<p>
-  <b>Twitter ID:</b>
-  <%=h @member.twitter_id %>
-</p>
 
-<p>
-  <b>Screen name:</b>
-  <%=h @member.screen_name %>
-</p>
+<% form_remote_tag :url => show_graph_member_path, :method => :get, 
+  :success => "initData(request)", :failure => "showError(request)" do -%>
 
-<p>
-  <b>Token:</b>
-  <%=h @member.token %>
-</p>
-
-<p>
-  <b>Secret:</b>
-  <%=h @member.secret %>
-</p>
+<div style="text-align:center;padding:10px;">
+<%= submit_tag 'Start New Game', :class => 'button' %>
 </div>
-
-<% form_tag update_status_member_path do -%>
-<p>
-  <b>What are you doing?</b><br />
-  <%= text_area_tag 'status_message' %>
-</p>
-<div><%= submit_tag 'Post' %></div>
 <% end -%>
 
-<div id="menu">
-<%= link_to_remote "Show friends",
-   :url => partialfriends_member_path(@member),
-   :method => :get,
-   :loading => "$('error').innerHTML = '';$('data').innerHTML = 'Loading..';",
-   :update => { :success => "data", :failure => "error" }
-%> |
-<%= link_to_remote "Show followers",
-   :url => partialfollowers_member_path(@member),
-   :method => :get,
-   :loading => "$('error').innerHTML = '';$('data').innerHTML = 'Loading..';",
-   :update => { :success => "data", :failure => "error" }
-%> |
-<%= link_to_remote "Show mentions",
-   :url => partialmentions_member_path(@member),
-   :method => :get,
-   :loading => "$('error').innerHTML = '';$('data').innerHTML = 'Loading..';",
-   :update => { :success => "data", :failure => "error" }
-%> |
-<%= link_to_remote "Show direct messages",
-   :url => partialdms_member_path(@member),
-   :method => :get,
-   :loading => "$('error').innerHTML = '';$('data').innerHTML = 'Loading..';",
-   :update => { :success => "data", :failure => "error" }
-%>
-</div>
 
-<div id="error">
-</div>
-<div id="data">
-</div>
+<div id="container"> 
+	
+</div> 
+
+<script type="text/javascript">
+	
+initData = function(request){
+	var container = $("container");
+	container.innerHTML = request.responseText;
+}
+showError = function(request) {
+	var container = $("container");
+	container.innerHTML = request.responseText;
+}
+showQuote = function(request) {
+	var quote = $("quote");
+	quote.innerHTML = request.responseText;
+}
+</script>

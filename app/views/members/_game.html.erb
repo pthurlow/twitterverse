@@ -1,0 +1,14 @@
+<div id="game">
+	<%= render :partial => 'members/friend', :collection =>@candidates, :layout => false %>
+</div>
+<div id="quote">
+	<p><%= @statuses[0]['text'] %></p>
+</div>
+
+<% form_remote_tag :url => get_quote_member_path, :method => :get, 
+  :success => "showQuote(request)" do -%>
+
+<div style="text-align:center;padding:10px;float:none;">
+<%= submit_tag 'Next Quote', :class => 'button' %>
+</div>
+<% end -%>

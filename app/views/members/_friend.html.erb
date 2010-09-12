@@ -1,12 +1,4 @@
-<hr/>
-<% style = "height:52px;padding-left:52px;background: url(#{ h friend['profile_image_url']}) no-repeat;" %>
-<div style="<%= style %>">
-<p>
-<%= h friend['screen_name']  %>, friends: <%= friend['friends_count'] %>, followers: <%= friend['followers_count'] %>
-</p>
-<% if friend['status'] %>
-<p>
-Latest update: <%= h friend['status']['text'] %>
-</p>
-<% end %>
+<div class="card">
+	<img class="icon" src="<%= h friend['profile_image_url'] %>" />
+	<p><%= h friend['screen_name']  %></p>
 </div>
