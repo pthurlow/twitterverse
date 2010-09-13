@@ -1,4 +1,13 @@
 <div class="card">
 	<img class="icon" src="<%= h friend['profile_image_url'] %>" />
 	<p><%= h friend['screen_name']  %></p>
+	<%= link_to_remote "Guess",
+		:class => "guess",
+		:url => guess_friend_member_path + "?guess_id=#{friend['id']}",
+		:method => :get,
+		:success => "endGame(request)",
+		:failure => "showError(request)"
+	%>
+	<a href="javascript:void(0)" class="delete" onclick="removeItem(this)">Remove</a>
+	<a href="javascript:void(0)" class="undo" onclick="addItem(this)">Undo</a>
 </div>

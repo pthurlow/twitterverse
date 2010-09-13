@@ -29,22 +29,67 @@ class MembersController < ApplicationController
     end
   end
 
+  def guess_friend
+    game_id = session[:game_id].to_i
+    guess_id = params[:guess_id].to_i 
+    @user_image = session[:game_image]
+    @user_name = session[:game_name]
+    if(game_id == guess_id)
+      @gameStatus = 'winner'
+      @message = 'You have chosen wisely'
+    else
+      @gameStatus = 'loser'
+      @message = 'You have chosen... unwisely'
+    end
+    render :partial => 'members/game_over', :layout => false
+  end
+
   def show_graph
     if (request.xhr?)
+      difficulty = params[:difficulty]
+      count = case difficulty
+        when "easy" then 4
+        when "medium" then 9
+        when "hard" then 17
+        else 4
+      end
+      @gameClass = case difficulty
+        when "hard" then "hard"
+        else "easy"
+      end
+
       friends = self.friends()
+      
+      #create a list of potential friends with enough
+      #status updates to use in the game
       @candidates = []
       friends.each do |friend|
-        if (friend['statuses_count'] > 50)
+        if (false == friend['statuses_count'].nil? and friend['statuses_count'] > 50)
           @candidates << friend
         end
       end
-      if (@candidates.empty?)
-        flash[:error] = 'not enough friends with status messages'
-        raise 'not enough friends'
+      #if there are not enough friends found throw an error
+      if (@candidates.empty? or @candidates.length <= count)
+        raise 'Not enough friends'
       end
-      @statuses = self.statuses(@candidates[0]['id'], 5)
-      session[:game_id] = @candidates[0]['id']
-      session[:game_quote_index] = 1
+      
+      #take a random selection of candidates as the final list
+      #of friends to select from, then pick the "guess" person
+      @candidates = @candidates.sort{ rand() - 0.5 }[0..count]
+      guess_id = rand(count)
+      
+      #get a random status update from the selected person
+      if @candidates[guess_id]['id'].nil?
+        raise 'Error with user status updates. please try again.'
+      end
+      statuses = self.statuses(@candidates[guess_id]['id'], 50)
+      random_status = rand(50)
+      @quote = stripEntities(statuses[random_status])
+      session[:game_id] = @candidates[guess_id]['id']
+      session[:game_quote_index] = [random_status]
+      session[:game_image] = @candidates[guess_id]['profile_image_url']
+      session[:game_name] = @candidates[guess_id]['screen_name']
+      session[:game_countdown] = 5
       render :partial => 'members/game', :layout => false
     else
       flash[:error] = 'method only supporting XmlHttpRequest'
@@ -56,20 +101,31 @@ class MembersController < ApplicationController
 
   def get_quote
     if (request.xhr?)
-      friend_id = session[:game_id]
-      quote_index = session[:game_quote_index]
-      statuses = self.statuses(friend_id, 6)
-      puts quote_index
-      if (quote_index < 5)
-        puts quote_index
-        @quote = statuses[quote_index]['text']
-        session[:game_quote_index] = quote_index + 1
+      if(session[:game_countdown] <= 0)
+        raise 'No more hints allowed'
       end
+      
+      friend_id = session[:game_id]
+      quote_list = session[:game_quote_index]
+      statuses = self.statuses(friend_id, 50)
+      pick_list = (0..49).to_a - quote_list
+      new_index = pick_list[rand(pick_list.length)]
+      
+      if(statuses[new_index].nil?)
+        raise 'Error with status. please try again'
+      end
+      
+      @quote = stripEntities(statuses[new_index])
+      session[:game_quote_index] = quote_list << new_index
+      session[:game_countdown] -= 1
+      @countdown = session[:game_countdown]
       render :partial => 'members/quote', :layout => false
     else
       flash[:error] = 'method only supporting XmlHttpRequest'
       member_path(@member)
     end
+  rescue => err
+    render :text => err, :status => 500
   end
 
   def update_status
@@ -122,7 +178,30 @@ class MembersController < ApplicationController
   end
 
 
-  
+  def stripEntities(status)
+    
+    if status['entities'].nil?
+      status['text']
+    else
+      text = status['text']
+      unless status['entities']['urls'].nil?
+        status['entities']['urls'].each do |url|
+          text[url['indicies'][0]..url['indicies'][1]] = '<span class="insert">deleted</span>'
+        end
+      end
+      unless status['entities']['hashtags'].nil?
+        status['entities']['hashtags'].each do |url|
+          text[url['indicies'][0]..url['indicies'][1]] = '<span class="insert">deleted</span>'
+        end
+      end
+      unless status['entities']['user_mentions'].nil?
+        status['entities']['user_mentions'].each do |url|
+          text[url['indicies'][0]..url['indicies'][1]] = '<span class="insert">deleted</span>'
+        end
+      end
+      text
+    end
+  end
   
 protected
 

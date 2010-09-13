@@ -14,12 +14,6 @@
 <h1>Tweet Who?</h1>
 </div>
 
-<div id="flashbar">
-	<%= content_tag(:div, flash[:notice], :class => 'flash', :id => 'flash' )  + 
-	javascript_tag( visual_effect( :fade , :flash, :duration => 20 ) )  if flash[:notice] %>
-	<%= content_tag(:div, flash[:error], :class => 'flasherror') if flash[:error] %>
-</div>
-
 <%= yield  %>
 
 <%= render :partial => "members/part_login", :locals => {  } -%>

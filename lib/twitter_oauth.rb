@@ -144,7 +144,7 @@ class TwitterOauth
   end
   
   def statuses(user, count)
-    response = access_token.get("/statuses/user_timeline.json?user_id=#{user}&count=#{count}")
+    response = access_token.get("/statuses/user_timeline.json?include_entities=true&user_id=#{user}&count=#{count}")
     case response
     when Net::HTTPSuccess
       statuses=JSON.parse(response.body)

@@ -6,6 +6,7 @@ ActionController::Routing::Routes.draw do |map|
     :member => { 
       :show_graph => :get,
       :get_quote => :get,
+      :guess_friend => :get,
       :update_status => :post, 
       :partialfriends => :get, 
       :partialfollowers => :get, 

@@ -1,9 +1,12 @@
 
-<% form_remote_tag :url => show_graph_member_path, :method => :get, 
+<% form_remote_tag :url => show_graph_member_path, :method => :get, :loading => "loading()",
   :success => "initData(request)", :failure => "showError(request)" do -%>
 
 <div style="text-align:center;padding:10px;">
-<%= submit_tag 'Start New Game', :class => 'button' %>
+<%= submit_tag 'Start New Game', :class => 'button' %><br/>
+<input checked type="radio" name="difficulty" value="easy" /> Easy (5 choices)
+<input type="radio" name="difficulty" value="medium" /> Medium (10 choices)
+<input type="radio" name="difficulty" value="hard" /> Hard (20 choices)
 </div>
 <% end -%>
 
@@ -13,8 +16,15 @@
 </div> 
 
 <script type="text/javascript">
+countdown = 5;
+
+loading = function() {
+	var container = $("container");
+	container.innerHTML = '<div class="loading"><p>Loading...</p></div>';
+}
 	
 initData = function(request){
+	countdown = 5;
 	var container = $("container");
 	container.innerHTML = request.responseText;
 }
@@ -23,7 +33,24 @@ showError = function(request) {
 	container.innerHTML = request.responseText;
 }
 showQuote = function(request) {
+	countdown -= 1;
 	var quote = $("quote");
+	var count = $("countdown");
 	quote.innerHTML = request.responseText;
+	count.innerHTML = countdown;
+	if(countdown == 0) {
+		var button = $("quote_button");
+		button.disable();
+	}
+}
+endGame = function(request) {
+	var container = $("container");
+	container.innerHTML = request.responseText;
+}
+removeItem = function(item) {
+	item.parentNode.addClassName("hidden");
+}
+addItem = function(item) {
+	item.parentNode.removeClassName("hidden");
 }
 </script>
