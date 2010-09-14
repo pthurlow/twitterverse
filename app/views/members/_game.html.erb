@@ -7,7 +7,7 @@
 	<div id="quote"><%= render :partial => 'members/quote', :layout => false %></div>
 </div>
 
-<% form_remote_tag :url => get_quote_member_path, :method => :get, 
+<% form_remote_tag :url => get_quote_member_path, :loading => "loadQuote()", :method => :get, 
   :success => "showQuote(request)" do -%>
 
 <div style="text-align:center;padding:10px;float:none;">

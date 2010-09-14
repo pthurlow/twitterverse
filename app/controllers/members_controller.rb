@@ -57,9 +57,7 @@ class MembersController < ApplicationController
         when "hard" then "hard"
         else "easy"
       end
-
       friends = self.friends()
-      
       #create a list of potential friends with enough
       #status updates to use in the game
       @candidates = []
@@ -72,18 +70,27 @@ class MembersController < ApplicationController
       if (@candidates.empty? or @candidates.length <= count)
         raise 'Not enough friends'
       end
-      
       #take a random selection of candidates as the final list
       #of friends to select from, then pick the "guess" person
       @candidates = @candidates.sort{ rand() - 0.5 }[0..count]
       guess_id = rand(count)
-      
       #get a random status update from the selected person
-      if @candidates[guess_id]['id'].nil?
+      unless @candidates[guess_id]['id']
         raise 'Error with user status updates. please try again.'
       end
       statuses = self.statuses(@candidates[guess_id]['id'], 50)
-      random_status = rand(50)
+      unless statuses
+        raise 'Error getting statuses'
+      end
+      random_status = rand(statuses.length)
+      max_tries = 0
+      while !statuses[random_status]
+        random_status = rand(statuses.length)
+        max_tries += 1
+      end
+      unless statuses[random_status]
+        raise 'Error getting status message'
+      end
       @quote = stripEntities(statuses[random_status])
       session[:game_id] = @candidates[guess_id]['id']
       session[:game_quote_index] = [random_status]
@@ -108,7 +115,10 @@ class MembersController < ApplicationController
       friend_id = session[:game_id]
       quote_list = session[:game_quote_index]
       statuses = self.statuses(friend_id, 50)
-      pick_list = (0..49).to_a - quote_list
+      unless statuses
+        raise 'Error getting statuses'
+      end
+      pick_list = (0..statuses.length).to_a - quote_list
       new_index = pick_list[rand(pick_list.length)]
       
       if(statuses[new_index].nil?)
@@ -179,26 +189,30 @@ class MembersController < ApplicationController
 
 
   def stripEntities(status)
-    
+    puts 'a'
     if status['entities'].nil?
       status['text']
     else
+      puts 'b'
       text = status['text']
       unless status['entities']['urls'].nil?
         status['entities']['urls'].each do |url|
-          text[url['indicies'][0]..url['indicies'][1]] = '<span class="insert">deleted</span>'
+          text[url['indices'][0]..url['indices'][1]] = '<span class="insert">deleted</span>'
         end
       end
+      puts'c'
       unless status['entities']['hashtags'].nil?
         status['entities']['hashtags'].each do |url|
-          text[url['indicies'][0]..url['indicies'][1]] = '<span class="insert">deleted</span>'
+          text[url['indices'][0]..url['indices'][1]] = '<span class="insert">deleted</span>'
         end
       end
+      puts 'd'
       unless status['entities']['user_mentions'].nil?
         status['entities']['user_mentions'].each do |url|
-          text[url['indicies'][0]..url['indicies'][1]] = '<span class="insert">deleted</span>'
+          text[url['indices'][0]..url['indices'][1]] = '<span class="insert">deleted</span>'
         end
       end
+      puts "text #{text}"
       text
     end
   end
