@@ -1,14 +1,16 @@
+<div class="options">
+	<% form_remote_tag :url => show_graph_member_path, 
+		:method => :get, 
+		:loading => "loading()",
+		:success => "initData(request)", 
+		:failure => "showError(request)" do -%>
 
-<% form_remote_tag :url => show_graph_member_path, :method => :get, :loading => "loading()",
-  :success => "initData(request)", :failure => "showError(request)" do -%>
-
-<div style="text-align:center;padding:10px;">
-<%= submit_tag 'Start New Game', :class => 'button' %><br/>
-<input checked type="radio" name="difficulty" value="easy" /> Easy (5 choices)
-<input type="radio" name="difficulty" value="medium" /> Medium (10 choices)
-<input type="radio" name="difficulty" value="hard" /> Hard (20 choices)
+		<%= submit_tag 'Start New Game', :class => 'button blue' %><br/>
+		<input checked type="radio" name="difficulty" value="easy" /> Easy (5 choices)
+		<input type="radio" name="difficulty" value="medium" /> Medium (10 choices)
+		<input type="radio" name="difficulty" value="hard" /> Hard (20 choices)
+	<% end -%>
 </div>
-<% end -%>
 
 
 <div id="container"> 

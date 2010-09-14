@@ -86,5 +86,7 @@ Rails::Initializer.run do |config|
   # Twitter OAuth Consumer secret
   TWOAUTH_SECRET = ENV['TWOAUTH_SECRET']
 
-  
+  TWOAUTH_CALLBACK = 'http://localhost:3002/members/callback'
+TWOAUTH_KEY = 'piyiNRZotRCFN8kHuI5LaA'
+TWOAUTH_SECRET = '5k0mHSwGSnkTNgCR6TAE6ZwDbsnCAHEJyJGiAgwaIaU'
 end

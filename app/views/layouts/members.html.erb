@@ -1,17 +1,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="<% if logged_in? %>signed_in<% end %>">
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>Tweet Who?</title>
+  <title>WhooTweet?</title>
   <%= stylesheet_link_tag 'scaffold' %>
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag( :defaults ) %>
 </head>
 <body>
 
 <div id="header">
-<h1>Tweet Who?</h1>
+	<div class="body">
+		<%= image_tag( 'logo.png', { :class => 'logo' } ) %>
+		<h1>WhooTweet?</h1>
+		<% if logged_in? %>
+		<a href="http://github.com/pthurlow/twitterverse" class="nav-button blue end">github source</a>
+		<%= link_to 'sign-out', signout_path, :class => 'nav-button blue start'  %>
+		<span class="welcome">Hello, <strong><%= current_user.screen_name  %></strong></span>
+		<% end %>
+	</div>
 </div>
 
 <%= yield  %>

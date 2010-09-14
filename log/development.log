@@ -7558,3 +7558,1153 @@ Rendered members/_friend (4.8ms)
 Rendered members/_quote (0.2ms)
 Rendered members/_game (60.8ms)
 Completed in 2098ms (View: 62, DB: 1) | 200 OK [http://localhost/members/pthurlow/show_graph?authenticity_token=ewmW7J3O3mFHrHEnLf3pmhFPsT93DVIPFADNShoRPeo%3D&commit=Start%20New%20Game&difficulty=medium]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 17:42:36) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (1.4ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (27.0ms)
+Completed in 233ms (View: 113, DB: 2) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 17:42:41) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"ewmW7J3O3mFHrHEnLf3pmhFPsT93DVIPFADNShoRPeo=", "id"=>"pthurlow", "difficulty"=>"easy"}
+  [4;36;1mMember Load (1.0ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_friend (8.2ms)
+Rendered members/_friend (4.8ms)
+Rendered members/_friend (4.8ms)
+Rendered members/_friend (4.6ms)
+Rendered members/_friend (5.3ms)
+Rendered members/_quote (17.0ms)
+Rendered members/_game (75.0ms)
+Completed in 1686ms (View: 85, DB: 2) | 200 OK [http://localhost/members/pthurlow/show_graph?authenticity_token=ewmW7J3O3mFHrHEnLf3pmhFPsT93DVIPFADNShoRPeo%3D&commit=Start%20New%20Game&difficulty=easy]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 17:46:01) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (1.5ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (2.2ms)
+Completed in 161ms (View: 69, DB: 2) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 17:46:03) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"ewmW7J3O3mFHrHEnLf3pmhFPsT93DVIPFADNShoRPeo=", "id"=>"pthurlow", "difficulty"=>"easy"}
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (1.0ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Completed in 1789ms (View: 2, DB: 2) | 500 Internal Server Error [http://localhost/members/pthurlow/show_graph?authenticity_token=ewmW7J3O3mFHrHEnLf3pmhFPsT93DVIPFADNShoRPeo%3D&commit=Start%20New%20Game&difficulty=easy]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 17:46:07) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"ewmW7J3O3mFHrHEnLf3pmhFPsT93DVIPFADNShoRPeo=", "id"=>"pthurlow", "difficulty"=>"easy"}
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_friend (6.8ms)
+Rendered members/_friend (5.2ms)
+Rendered members/_friend (5.0ms)
+Rendered members/_friend (4.9ms)
+Rendered members/_friend (5.1ms)
+Rendered members/_quote (1.0ms)
+Rendered members/_game (65.0ms)
+Completed in 1375ms (View: 78, DB: 1) | 200 OK [http://localhost/members/pthurlow/show_graph?authenticity_token=ewmW7J3O3mFHrHEnLf3pmhFPsT93DVIPFADNShoRPeo%3D&commit=Start%20New%20Game&difficulty=easy]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 17:52:51) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.9ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (2.9ms)
+Completed in 174ms (View: 56, DB: 2) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 17:52:55) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"ewmW7J3O3mFHrHEnLf3pmhFPsT93DVIPFADNShoRPeo=", "id"=>"pthurlow", "difficulty"=>"easy"}
+  [4;36;1mMember Load (0.6ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.8ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_friend (7.1ms)
+Rendered members/_friend (5.4ms)
+Rendered members/_friend (5.0ms)
+Rendered members/_friend (4.7ms)
+Rendered members/_friend (5.1ms)
+Rendered members/_quote (1.0ms)
+Rendered members/_game (62.2ms)
+Completed in 1720ms (View: 72, DB: 1) | 200 OK [http://localhost/members/pthurlow/show_graph?authenticity_token=ewmW7J3O3mFHrHEnLf3pmhFPsT93DVIPFADNShoRPeo%3D&commit=Start%20New%20Game&difficulty=easy]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 17:56:22) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.9ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.8ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (2.4ms)
+Completed in 193ms (View: 74, DB: 2) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 17:56:25) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"ewmW7J3O3mFHrHEnLf3pmhFPsT93DVIPFADNShoRPeo=", "id"=>"pthurlow", "difficulty"=>"easy"}
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (1.4ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_friend (6.9ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.7ms)
+Rendered members/_friend (4.7ms)
+Rendered members/_friend (5.8ms)
+Rendered members/_quote (0.9ms)
+Rendered members/_game (63.7ms)
+Completed in 1742ms (View: 82, DB: 2) | 200 OK [http://localhost/members/pthurlow/show_graph?authenticity_token=ewmW7J3O3mFHrHEnLf3pmhFPsT93DVIPFADNShoRPeo%3D&commit=Start%20New%20Game&difficulty=easy]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 17:59:17) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.9ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (2.5ms)
+Completed in 145ms (View: 63, DB: 2) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 18:02:15) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.9ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (2.6ms)
+Completed in 162ms (View: 69, DB: 2) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 18:03:07) [GET]
+Rendering template within layouts/members
+Rendering members/index
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+Rendered members/_part_login (42.1ms)
+Completed in 80ms (View: 73, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 18:03:16) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (0.7ms)
+Completed in 60ms (View: 16, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 18:04:06) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9+I+Yw=", "id"=>"pthurlow", "difficulty"=>"easy"}
+  [4;35;1mMember Load (0.6ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_friend (6.7ms)
+Rendered members/_friend (4.9ms)
+Rendered members/_friend (5.0ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (120.2ms)
+Rendered members/_quote (1.0ms)
+Rendered members/_game (175.0ms)
+Completed in 1754ms (View: 198, DB: 1) | 200 OK [http://localhost/members/pthurlow/show_graph?authenticity_token=GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9%2BI%2BYw%3D&commit=Start%20New%20Game&difficulty=easy]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 18:38:23) [GET]
+Rendering template within layouts/members
+Rendering members/index
+  [4;36;1mMember Load (1.2ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+Rendered members/_part_login (57.3ms)
+Completed in 208ms (View: 196, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 18:40:35) [GET]
+Rendering template within layouts/members
+Rendering members/index
+  [4;36;1mMember Load (9.3ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+Rendered members/_part_login (61.3ms)
+Completed in 158ms (View: 144, DB: 9) | 200 OK [http://localhost/]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 18:43:07) [GET]
+  Parameters: {"id"=>"pthurlow"}
+Redirected to http://twitter.com/oauth/authorize?oauth_token=MJE5xDw3TSjYEnUq6y03EWzITqL2WPPlib6sbgE
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 594ms (DB: 0) | 302 Found [http://localhost/members/pthurlow]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 18:43:17) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (1.7ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 18:54:38) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (3.3ms)
+Completed in 75ms (View: 71, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 18:56:02) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (3.3ms)
+Completed in 75ms (View: 71, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 18:59:30) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (3.3ms)
+Completed in 80ms (View: 76, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 18:59:34) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (1.7ms)
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 19:00:01) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (3.6ms)
+Completed in 80ms (View: 76, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 19:00:47) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (3.3ms)
+Completed in 74ms (View: 70, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 19:00:55) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (1.7ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-09-13 19:00:57) [GET]
+Redirected to http://twitter.com/oauth/authorize?oauth_token=WJWpE6TCYblFLyq7t1bqJrmRnfuj3585obilH9wTk
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 222ms (DB: 0) | 302 Found [http://localhost/members/new]
+
+
+Processing MembersController#callback (for 127.0.0.1 at 2010-09-13 19:01:04) [GET]
+  Parameters: {"oauth_token"=>"WJWpE6TCYblFLyq7t1bqJrmRnfuj3585obilH9wTk", "oauth_verifier"=>"wOkSYrd0iPMdPoTblcJNd9KQ2eynfb5zkYExQ7nuc"}
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Redirected to http://localhost:3002/members/pthurlow
+Completed in 2217ms (DB: 1) | 302 Found [http://localhost/members/callback?oauth_token=WJWpE6TCYblFLyq7t1bqJrmRnfuj3585obilH9wTk&oauth_verifier=wOkSYrd0iPMdPoTblcJNd9KQ2eynfb5zkYExQ7nuc]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 19:01:06) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;35;1mMember Load (0.6ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (0.4ms)
+Completed in 75ms (View: 43, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 19:04:22) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"/RGy1PX/ZCdQTVJCbbYM7ENcsH+6cBR55DDUU+UJUuM=", "id"=>"pthurlow", "difficulty"=>"easy"}
+  [4;35;1mMember Load (0.6ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;36;1mMember Load (1.4ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_friend (6.5ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.6ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_quote (1.0ms)
+Rendered members/_game (57.1ms)
+Completed in 1997ms (View: 68, DB: 2) | 200 OK [http://localhost/members/pthurlow/show_graph?authenticity_token=%2FRGy1PX%2FZCdQTVJCbbYM7ENcsH%2B6cBR55DDUU%2BUJUuM%3D&commit=Start%20New%20Game&difficulty=easy]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 19:17:08) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (2.0ms)
+Completed in 131ms (View: 54, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#signout (for 127.0.0.1 at 2010-09-13 19:17:12) [GET]
+Redirected to http://localhost:3002/
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 19:17:12) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (1.6ms)
+Completed in 24ms (View: 20, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-09-13 19:17:16) [GET]
+Redirected to http://twitter.com/oauth/authorize?oauth_token=KlLDOrlkXDiVenwspPIK583FhFMznywqSkn8js0kh4g
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 207ms (DB: 0) | 302 Found [http://localhost/members/new]
+
+
+Processing MembersController#callback (for 127.0.0.1 at 2010-09-13 19:17:19) [GET]
+  Parameters: {"oauth_token"=>"KlLDOrlkXDiVenwspPIK583FhFMznywqSkn8js0kh4g", "oauth_verifier"=>"315RgkvIQLzMK6lmPpP3SUp1PL1HV5N8LA7xQ0StM"}
+  [4;36;1mMember Load (0.6ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Redirected to http://localhost:3002/members/pthurlow
+Completed in 3288ms (DB: 1) | 302 Found [http://localhost/members/callback?oauth_token=KlLDOrlkXDiVenwspPIK583FhFMznywqSkn8js0kh4g&oauth_verifier=315RgkvIQLzMK6lmPpP3SUp1PL1HV5N8LA7xQ0StM]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 19:17:22) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;35;1mMember Load (0.6ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (0.4ms)
+Completed in 49ms (View: 15, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 19:27:50) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (2.0ms)
+Completed in 134ms (View: 58, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 19:28:59) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (1.9ms)
+Completed in 132ms (View: 55, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 19:30:07) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (2.1ms)
+Completed in 130ms (View: 56, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#signout (for 127.0.0.1 at 2010-09-13 19:30:09) [GET]
+Redirected to http://localhost:3002/
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 19:30:09) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (1.3ms)
+Completed in 22ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 19:35:45) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (2.9ms)
+Completed in 81ms (View: 76, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-09-13 19:35:49) [GET]
+Redirected to http://twitter.com/oauth/authorize?oauth_token=EtFqhDOKjzo5V9aTZAmlABOoCsJOJHHKdku6im2HMg
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 357ms (DB: 0) | 302 Found [http://localhost/members/new]
+
+
+Processing MembersController#callback (for 127.0.0.1 at 2010-09-13 19:35:52) [GET]
+  Parameters: {"oauth_token"=>"EtFqhDOKjzo5V9aTZAmlABOoCsJOJHHKdku6im2HMg", "oauth_verifier"=>"VGvenSOSEmTg3rnl9tms3EzNdhTZDyIu39j9HvDZ0"}
+  [4;36;1mMember Load (1.0ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Redirected to http://localhost:3002/members/pthurlow
+Completed in 343ms (DB: 1) | 302 Found [http://localhost/members/callback?oauth_token=EtFqhDOKjzo5V9aTZAmlABOoCsJOJHHKdku6im2HMg&oauth_verifier=VGvenSOSEmTg3rnl9tms3EzNdhTZDyIu39j9HvDZ0]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 19:35:53) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;35;1mMember Load (1.1ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;36;1mMember Load (0.9ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (0.4ms)
+Completed in 82ms (View: 41, DB: 2) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#signout (for 127.0.0.1 at 2010-09-13 19:36:19) [GET]
+Redirected to http://localhost:3002/
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 19:36:19) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (1.2ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-09-13 19:37:59) [GET]
+Redirected to http://twitter.com/oauth/authorize?oauth_token=hEG1TfDiWUnaN4k390h9d8zCr5ocl6YfmzCmacF7pD8
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 205ms (DB: 0) | 302 Found [http://localhost/members/new]
+
+
+Processing MembersController#callback (for 127.0.0.1 at 2010-09-13 19:38:01) [GET]
+  Parameters: {"oauth_token"=>"hEG1TfDiWUnaN4k390h9d8zCr5ocl6YfmzCmacF7pD8", "oauth_verifier"=>"ePDA1qH891LctHQ5ImjHQfvUNoAviI37wjBTc5ReFv0"}
+  [4;35;1mMember Load (0.6ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Redirected to http://localhost:3002/members/pthurlow
+Completed in 272ms (DB: 1) | 302 Found [http://localhost/members/callback?oauth_token=hEG1TfDiWUnaN4k390h9d8zCr5ocl6YfmzCmacF7pD8&oauth_verifier=ePDA1qH891LctHQ5ImjHQfvUNoAviI37wjBTc5ReFv0]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 19:38:02) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.6ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (0.4ms)
+Completed in 48ms (View: 14, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 19:38:08) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"/RGy1PX/ZCdQTVJCbbYM7ENcsH+6cBR55DDUU+UJUuM=", "id"=>"pthurlow", "difficulty"=>"easy"}
+  [4;36;1mMember Load (0.6ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_friend (6.8ms)
+Rendered members/_friend (18.3ms)
+Rendered members/_friend (27.1ms)
+Rendered members/_friend (4.9ms)
+Rendered members/_friend (8.0ms)
+Rendered members/_quote (1.4ms)
+Rendered members/_game (100.8ms)
+Completed in 2451ms (View: 113, DB: 1) | 200 OK [http://localhost/members/pthurlow/show_graph?authenticity_token=%2FRGy1PX%2FZCdQTVJCbbYM7ENcsH%2B6cBR55DDUU%2BUJUuM%3D&commit=Start%20New%20Game&difficulty=easy]
+
+
+Processing MembersController#guess_friend (for 127.0.0.1 at 2010-09-13 19:40:31) [GET]
+  Parameters: {"authenticity_token"=>"/RGy1PX/ZCdQTVJCbbYM7ENcsH+6cBR55DDUU+UJUuM=", "id"=>"pthurlow", "guess_id"=>"49636886"}
+  [4;36;1mMember Load (0.6ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_game_over (1.6ms)
+Completed in 43ms (View: 12, DB: 1) | 200 OK [http://localhost/members/pthurlow/guess_friend?guess_id=49636886&authenticity_token=%2FRGy1PX%2FZCdQTVJCbbYM7ENcsH%2B6cBR55DDUU%2BUJUuM%3D]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 19:40:39) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"/RGy1PX/ZCdQTVJCbbYM7ENcsH+6cBR55DDUU+UJUuM=", "id"=>"pthurlow", "difficulty"=>"easy"}
+  [4;36;1mMember Load (0.6ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_friend (4.7ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_quote (0.2ms)
+Rendered members/_game (32.1ms)
+Completed in 2427ms (View: 33, DB: 1) | 200 OK [http://localhost/members/pthurlow/show_graph?authenticity_token=%2FRGy1PX%2FZCdQTVJCbbYM7ENcsH%2B6cBR55DDUU%2BUJUuM%3D&commit=Start%20New%20Game&difficulty=easy]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 19:44:59) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (2.0ms)
+Completed in 141ms (View: 64, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 19:49:37) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (0.4ms)
+Completed in 51ms (View: 15, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 19:52:35) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.9ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (2.0ms)
+Completed in 136ms (View: 57, DB: 2) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 19:54:28) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (1.9ms)
+Completed in 130ms (View: 54, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 19:57:35) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (1.9ms)
+Completed in 130ms (View: 56, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 19:59:19) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (1.9ms)
+Completed in 138ms (View: 58, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:02:12) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (1.9ms)
+Completed in 150ms (View: 59, DB: 2) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:05:07) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (2.0ms)
+Completed in 133ms (View: 58, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:06:29) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.8ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (2.3ms)
+Completed in 138ms (View: 60, DB: 2) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#signout (for 127.0.0.1 at 2010-09-13 20:06:56) [GET]
+Redirected to http://localhost:3002/
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 20:06:56) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (1.3ms)
+Completed in 22ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-09-13 20:07:09) [GET]
+Redirected to http://twitter.com/oauth/authorize?oauth_token=YmM0sBDvmH3VvXu4ZiJdcBe3o2XMsndEHQqVIxl0M
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 267ms (DB: 0) | 302 Found [http://localhost/members/new]
+
+
+Processing MembersController#callback (for 127.0.0.1 at 2010-09-13 20:07:12) [GET]
+  Parameters: {"oauth_token"=>"YmM0sBDvmH3VvXu4ZiJdcBe3o2XMsndEHQqVIxl0M", "oauth_verifier"=>"xZbxjBmYoLPLZyOAGwZce2bfUNbfa3B3InioJSsWRLM"}
+  [4;36;1mMember Load (0.6ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Redirected to http://localhost:3002/members/pthurlow
+Completed in 453ms (DB: 1) | 302 Found [http://localhost/members/callback?oauth_token=YmM0sBDvmH3VvXu4ZiJdcBe3o2XMsndEHQqVIxl0M&oauth_verifier=xZbxjBmYoLPLZyOAGwZce2bfUNbfa3B3InioJSsWRLM]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:07:13) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;35;1mMember Load (0.6ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (0.4ms)
+Completed in 50ms (View: 16, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#signout (for 127.0.0.1 at 2010-09-13 20:08:29) [GET]
+Redirected to http://localhost:3002/
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 20:08:29) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (1.4ms)
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 20:11:52) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (3.9ms)
+Completed in 81ms (View: 77, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-09-13 20:11:57) [GET]
+Redirected to http://twitter.com/oauth/authorize?oauth_token=OGBXp4yMEbQSUTrSyxfTLAvSGwJJPEbN3wYPSLDMi8
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 451ms (DB: 0) | 302 Found [http://localhost/members/new]
+
+
+Processing MembersController#callback (for 127.0.0.1 at 2010-09-13 20:12:00) [GET]
+  Parameters: {"oauth_token"=>"OGBXp4yMEbQSUTrSyxfTLAvSGwJJPEbN3wYPSLDMi8", "oauth_verifier"=>"3xC5xScO4lC4xVUDSXqz6UU4jfmO1xxfkn33pObRb6E"}
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Redirected to http://localhost:3002/members/pthurlow
+Completed in 522ms (DB: 1) | 302 Found [http://localhost/members/callback?oauth_token=OGBXp4yMEbQSUTrSyxfTLAvSGwJJPEbN3wYPSLDMi8&oauth_verifier=3xC5xScO4lC4xVUDSXqz6UU4jfmO1xxfkn33pObRb6E]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:12:01) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;35;1mMember Load (0.6ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (0.8ms)
+Completed in 61ms (View: 29, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 20:12:11) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"/RGy1PX/ZCdQTVJCbbYM7ENcsH+6cBR55DDUU+UJUuM=", "id"=>"pthurlow", "difficulty"=>"easy"}
+  [4;35;1mMember Load (0.6ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_friend (6.4ms)
+Rendered members/_friend (4.6ms)
+Rendered members/_friend (4.6ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.6ms)
+Rendered members/_quote (1.0ms)
+Rendered members/_game (164.9ms)
+Completed in 2340ms (View: 176, DB: 1) | 200 OK [http://localhost/members/pthurlow/show_graph?authenticity_token=%2FRGy1PX%2FZCdQTVJCbbYM7ENcsH%2B6cBR55DDUU%2BUJUuM%3D&commit=Start%20New%20Game&difficulty=easy]
+
+
+Processing MembersController#guess_friend (for 127.0.0.1 at 2010-09-13 20:12:50) [GET]
+  Parameters: {"authenticity_token"=>"/RGy1PX/ZCdQTVJCbbYM7ENcsH+6cBR55DDUU+UJUuM=", "id"=>"pthurlow", "guess_id"=>"14783290"}
+  [4;35;1mMember Load (0.6ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_game_over (2.2ms)
+Completed in 44ms (View: 13, DB: 1) | 200 OK [http://localhost/members/pthurlow/guess_friend?guess_id=14783290&authenticity_token=%2FRGy1PX%2FZCdQTVJCbbYM7ENcsH%2B6cBR55DDUU%2BUJUuM%3D]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 20:12:55) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"/RGy1PX/ZCdQTVJCbbYM7ENcsH+6cBR55DDUU+UJUuM=", "id"=>"pthurlow", "difficulty"=>"medium"}
+  [4;35;1mMember Load (0.6ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_friend (4.8ms)
+Rendered members/_friend (5.5ms)
+Rendered members/_friend (4.6ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.4ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_quote (0.2ms)
+Rendered members/_game (57.5ms)
+Completed in 1864ms (View: 59, DB: 1) | 200 OK [http://localhost/members/pthurlow/show_graph?authenticity_token=%2FRGy1PX%2FZCdQTVJCbbYM7ENcsH%2B6cBR55DDUU%2BUJUuM%3D&commit=Start%20New%20Game&difficulty=medium]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:15:05) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (1.9ms)
+Completed in 135ms (View: 59, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:18:17) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (2.1ms)
+Completed in 133ms (View: 57, DB: 2) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:20:24) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (1.9ms)
+Completed in 133ms (View: 58, DB: 2) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:22:04) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (1.0ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.8ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (1.9ms)
+Completed in 133ms (View: 56, DB: 2) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:22:19) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (1.9ms)
+Completed in 133ms (View: 59, DB: 2) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:23:30) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (2.0ms)
+Completed in 135ms (View: 59, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:24:44) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+ERROR: compiling _run_erb_app47views47members47show46html46erb RAISED compile error
+/Users/pthurlow007/Documents/rails/twitterverse/app/views/members/show.html.erb:3: syntax error, unexpected tASSOC, expecting kEND
+		:url => show_graph_member_path, 
+		       ^
+/Users/pthurlow007/Documents/rails/twitterverse/app/views/members/show.html.erb:4: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+		:method => :get, 
+		          ^
+/Users/pthurlow007/Documents/rails/twitterverse/app/views/members/show.html.erb:5: syntax error, unexpected ',', expecting kEND
+/Users/pthurlow007/Documents/rails/twitterverse/app/views/members/show.html.erb:6: syntax error, unexpected ',', expecting kEND
+		:success => "initData(request)", 
+		                                ^
+/Users/pthurlow007/Documents/rails/twitterverse/app/views/members/show.html.erb:7: syntax error, unexpected kDO, expecting kEND
+		:failure => "showError(request)" do 
+		                                   ^
+/Users/pthurlow007/Documents/rails/twitterverse/app/views/members/show.html.erb:60: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47members47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div style=\"options\">\n\t"
+;  form_remote_tag
+		:url => show_graph_member_path, 
+		:method => :get, 
+		:loading => "loading()",
+		:success => "initData(request)", 
+		:failure => "showError(request)" do 
+@output_buffer.concat "\n\t\t"
+; @output_buffer.concat(( submit_tag 'Start New Game', :class => 'button blue' ).to_s); @output_buffer.concat "<br/>\n\t\t<input checked type=\"radio\" name=\"difficulty\" value=\"easy\" /> Easy (5 choices)\n\t\t<input type=\"radio\" name=\"difficulty\" value=\"medium\" /> Medium (10 choices)\n\t\t<input type=\"radio\" name=\"difficulty\" value=\"hard\" /> Hard (20 choices)\n\t"
+
+
+
+;  end 
+@output_buffer.concat "</div>\n\n\n<div id=\"container\"> \n\t\n</div> \n\n<script type=\"text/javascript\">\ncountdown = 5;\n\nloading = function() {\n\tvar container = $(\"container\");\n\tcontainer.innerHTML = '<div class=\"loading\"><p>Loading...</p></div>';\n}\n\t\ninitData = function(request){\n\tcountdown = 5;\n\tvar container = $(\"container\");\n\tcontainer.innerHTML = request.responseText;\n}\nshowError = function(request) {\n\tvar container = $(\"container\");\n\tcontainer.innerHTML = request.responseText;\n}\nshowQuote = function(request) {\n\tcountdown -= 1;\n\tvar quote = $(\"quote\");\n\tvar count = $(\"countdown\");\n\tquote.innerHTML = request.responseText;\n\tcount.innerHTML = countdown;\n\tif(countdown == 0) {\n\t\tvar button = $(\"quote_button\");\n\t\tbutton.disable();\n\t}\n}\nendGame = function(request) {\n\tvar container = $(\"container\");\n\tcontainer.innerHTML = request.responseText;\n}\nremoveItem = function(item) {\n\titem.parentNode.addClassName(\"hidden\");\n}\naddItem = function(item) {\n\titem.parentNode.removeClassName(\"hidden\");\n}\n</script>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/pthurlow007/Documents/rails/twitterverse/app/views/members/show.html.erb:60:in `compile!'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/pthurlow007/Documents/rails/twitterverse/app/controllers/members_controller.rb:26:in `show'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+-e:2:in `load'
+-e:2
+
+ActionView::TemplateError (compile error
+/Users/pthurlow007/Documents/rails/twitterverse/app/views/members/show.html.erb:3: syntax error, unexpected tASSOC, expecting kEND
+		:url => show_graph_member_path, 
+		       ^
+/Users/pthurlow007/Documents/rails/twitterverse/app/views/members/show.html.erb:4: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+		:method => :get, 
+		          ^
+/Users/pthurlow007/Documents/rails/twitterverse/app/views/members/show.html.erb:5: syntax error, unexpected ',', expecting kEND
+/Users/pthurlow007/Documents/rails/twitterverse/app/views/members/show.html.erb:6: syntax error, unexpected ',', expecting kEND
+		:success => "initData(request)", 
+		                                ^
+/Users/pthurlow007/Documents/rails/twitterverse/app/views/members/show.html.erb:7: syntax error, unexpected kDO, expecting kEND
+		:failure => "showError(request)" do 
+		                                   ^
+/Users/pthurlow007/Documents/rails/twitterverse/app/views/members/show.html.erb:60: syntax error, unexpected kENSURE, expecting $end) on line #3 of app/views/members/show.html.erb:
+1: <div style="options">
+2: 	<% form_remote_tag
+3: 		:url => show_graph_member_path, 
+4: 		:method => :get, 
+5: 		:loading => "loading()",
+6: 		:success => "initData(request)", 
+
+    app/views/members/show.html.erb:60:in `compile!'
+    app/controllers/members_controller.rb:26:in `show'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (155.6ms)
+Rendered rescues/_request_and_response (3.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:25:09) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (1.9ms)
+Completed in 129ms (View: 54, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:25:39) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (2.0ms)
+Completed in 135ms (View: 57, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:26:40) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (1.5ms)
+Completed in 135ms (View: 58, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 20:26:44) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"/RGy1PX/ZCdQTVJCbbYM7ENcsH+6cBR55DDUU+UJUuM=", "id"=>"pthurlow", "difficulty"=>"easy"}
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_friend (6.3ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.4ms)
+Rendered members/_quote (1.0ms)
+Rendered members/_game (54.8ms)
+Completed in 2216ms (View: 65, DB: 1) | 200 OK [http://localhost/members/pthurlow/show_graph?authenticity_token=%2FRGy1PX%2FZCdQTVJCbbYM7ENcsH%2B6cBR55DDUU%2BUJUuM%3D&commit=Start%20New%20Game&difficulty=easy]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 20:31:43) [GET]
+Rendering template within layouts/members
+Rendering members/index
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+Rendered members/_part_login (1.5ms)
+Completed in 126ms (View: 121, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MembersController#signout (for 127.0.0.1 at 2010-09-13 20:32:01) [GET]
+Redirected to http://localhost:3002/
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 20:32:01) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (1.3ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#signout (for 127.0.0.1 at 2010-09-13 20:33:26) [GET]
+Redirected to http://localhost:3002/
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 20:33:26) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (1.3ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 20:34:45) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (2.8ms)
+Completed in 83ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 20:36:21) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (2.6ms)
+Completed in 79ms (View: 74, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-09-13 20:36:25) [GET]
+Rendering template within layouts/members
+Rendering members/index
+Rendered members/_part_login (1.3ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-09-13 20:36:33) [GET]
+Redirected to http://twitter.com/oauth/authorize?oauth_token=K0PnMGFIgSAyf7YbN4usPisCLdXjVMOJt16iGJmtuWI
+Filter chain halted as [:oauth_login_required] rendered_or_redirected.
+Completed in 199ms (DB: 0) | 302 Found [http://localhost/members/new]
+
+
+Processing MembersController#callback (for 127.0.0.1 at 2010-09-13 20:36:37) [GET]
+  Parameters: {"oauth_token"=>"K0PnMGFIgSAyf7YbN4usPisCLdXjVMOJt16iGJmtuWI", "oauth_verifier"=>"eNLKtXNJPZWI6vEev6SCNGSo2ZY8udj5QcsVIrIAGA"}
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Redirected to http://localhost:3002/members/pthurlow
+Completed in 415ms (DB: 1) | 302 Found [http://localhost/members/callback?oauth_token=K0PnMGFIgSAyf7YbN4usPisCLdXjVMOJt16iGJmtuWI&oauth_verifier=eNLKtXNJPZWI6vEev6SCNGSo2ZY8udj5QcsVIrIAGA]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:36:38) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;35;1mMember Load (0.6ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;36;1mMember Load (0.9ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (0.3ms)
+Completed in 77ms (View: 37, DB: 1) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 20:36:48) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9+I+Yw=", "id"=>"pthurlow", "difficulty"=>"easy"}
+  [4;35;1mMember Load (0.6ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_friend (6.4ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_friend (4.7ms)
+Rendered members/_quote (1.0ms)
+Rendered members/_game (67.0ms)
+Completed in 2259ms (View: 79, DB: 1) | 200 OK [http://localhost/members/pthurlow/show_graph?authenticity_token=GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9%2BI%2BYw%3D&commit=Start%20New%20Game&difficulty=easy]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-09-13 20:37:14) [GET]
+  Parameters: {"id"=>"pthurlow"}
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendering template within layouts/members
+Rendering members/show
+Rendered members/_part_login (1.5ms)
+Completed in 137ms (View: 59, DB: 2) | 200 OK [http://localhost/members/pthurlow]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 20:37:17) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9+I+Yw=", "id"=>"pthurlow", "difficulty"=>"easy"}
+  [4;36;1mMember Load (0.6ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_friend (6.2ms)
+Rendered members/_friend (4.6ms)
+Rendered members/_friend (4.6ms)
+Rendered members/_friend (4.6ms)
+Rendered members/_friend (4.5ms)
+Rendered members/_quote (1.0ms)
+Rendered members/_game (55.3ms)
+Completed in 2242ms (View: 66, DB: 1) | 200 OK [http://localhost/members/pthurlow/show_graph?authenticity_token=GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9%2BI%2BYw%3D&commit=Start%20New%20Game&difficulty=easy]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 20:37:23) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9+I+Yw=", "id"=>"pthurlow", "difficulty"=>"hard"}
+  [4;36;1mMember Load (0.6ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Completed in 1196ms (View: 2, DB: 1) | 500 Internal Server Error [http://localhost/members/pthurlow/show_graph?authenticity_token=GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9%2BI%2BYw%3D&commit=Start%20New%20Game&difficulty=hard]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 20:37:25) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9+I+Yw=", "id"=>"pthurlow", "difficulty"=>"hard"}
+  [4;36;1mMember Load (0.6ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Completed in 2436ms (View: 1, DB: 1) | 500 Internal Server Error [http://localhost/members/pthurlow/show_graph?authenticity_token=GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9%2BI%2BYw%3D&commit=Start%20New%20Game&difficulty=hard]
+
+
+Processing MembersController#show_graph (for 127.0.0.1 at 2010-09-13 20:37:29) [GET]
+  Parameters: {"commit"=>"Start New Game", "authenticity_token"=>"GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9+I+Yw=", "id"=>"pthurlow", "difficulty"=>"hard"}
+  [4;36;1mMember Load (0.6ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_friend (5.8ms)
+Rendered members/_friend (6.8ms)
+Rendered members/_friend (4.9ms)
+Rendered members/_friend (4.8ms)
+Rendered members/_friend (4.7ms)
+Rendered members/_friend (4.6ms)
+Rendered members/_friend (4.6ms)
+Rendered members/_friend (5.2ms)
+Rendered members/_friend (5.9ms)
+Rendered members/_friend (8.2ms)
+Rendered members/_friend (6.1ms)
+Rendered members/_friend (4.7ms)
+Rendered members/_friend (5.2ms)
+Rendered members/_friend (4.9ms)
+Rendered members/_friend (4.9ms)
+Rendered members/_friend (4.6ms)
+Rendered members/_friend (4.7ms)
+Rendered members/_friend (4.7ms)
+Rendered members/_quote (0.2ms)
+Rendered members/_game (110.9ms)
+Completed in 2536ms (View: 112, DB: 1) | 200 OK [http://localhost/members/pthurlow/show_graph?authenticity_token=GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9%2BI%2BYw%3D&commit=Start%20New%20Game&difficulty=hard]
+
+
+Processing MembersController#get_quote (for 127.0.0.1 at 2010-09-13 20:38:55) [GET]
+  Parameters: {"commit"=>"Next Quote", "authenticity_token"=>"GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9+I+Yw=", "id"=>"pthurlow"}
+  [4;36;1mMember Load (1.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (1.0ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Completed in 2468ms (View: 2, DB: 3) | 500 Internal Server Error [http://localhost/members/pthurlow/get_quote?authenticity_token=GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9%2BI%2BYw%3D&commit=Next%20Quote]
+
+
+Processing MembersController#get_quote (for 127.0.0.1 at 2010-09-13 20:39:15) [GET]
+  Parameters: {"commit"=>"Next Quote", "authenticity_token"=>"GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9+I+Yw=", "id"=>"pthurlow"}
+  [4;36;1mMember Load (0.6ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Completed in 1421ms (View: 2, DB: 1) | 500 Internal Server Error [http://localhost/members/pthurlow/get_quote?authenticity_token=GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9%2BI%2BYw%3D&commit=Next%20Quote]
+
+
+Processing MembersController#guess_friend (for 127.0.0.1 at 2010-09-13 20:39:55) [GET]
+  Parameters: {"authenticity_token"=>"GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9+I+Yw=", "id"=>"pthurlow", "guess_id"=>"6480682"}
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."twitter_id" = 14766295) LIMIT 1[0m
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."screen_name" = 'pthurlow') LIMIT 1[0m
+Rendered members/_game_over (2.0ms)
+Completed in 43ms (View: 11, DB: 1) | 200 OK [http://localhost/members/pthurlow/guess_friend?guess_id=6480682&authenticity_token=GVRSJkrtfL4SJdOjL4NWBFvDgLOVl8u6rBVgR9%2BI%2BYw%3D]
