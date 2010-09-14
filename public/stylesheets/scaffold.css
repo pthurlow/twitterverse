@@ -1,4 +1,4 @@
-body { background-color: #fff; color: #666; padding:0; margin:0; }
+body { background-color: #fff; color: #666; padding:0; margin:0; font-size:13px; line-height: 18px; font-family: verdana, arial, helvetica, sans-serif; }
 
 img { border:none; }
 
@@ -26,9 +26,6 @@ img { border:none; }
 
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
-  line-height: 18px;
   margin:0;
 }
 
@@ -127,7 +124,7 @@ a:hover { color: #fff; background-color:#000; }
 	text-align:center;
 }
 
-.description {
+.content {
 	text-align:center;
 	border-top:1px solid #eee;
 }
@@ -137,7 +134,60 @@ a:hover { color: #fff; background-color:#000; }
 	background:#eee;
 	padding:10px;
 }
-
+.description {
+	width:700px;
+	margin:20px auto;
+	-moz-box-shadow: 0px 0px 5px #ccc;
+	-webkit-box-shadow: 0px 0px 5px #ccc;
+	box-shadow: 0px 0px 5px #ccc;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+.description h3 {
+	color:#fff;
+	display:block;
+	padding:20px;
+	-moz-border-radius:5px 5px 0 0;
+	-webkit-border-radius:5px 5px 0 0;
+	border-radius:5px 5px 0 0;
+	border: 1px solid #ffffff;
+	border-bottom:none;
+	background: #5fbeec;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a9dbf0), to(#5fbeec));
+	background: -moz-linear-gradient(top,  #a9dbf0,  #5fbeec);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9dbf0', endColorstr='#5fbeec');
+	text-shadow:-1px -1px 0 rgba(0,0,0,0.2);
+	font-size:190%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	margin:0;
+}
+.description .details {
+	display:block;
+	padding:10px 50px;
+	-moz-border-radius:0 0 5px 5px;
+	-webkit-border-radius:0 0 5px 5px;
+	border-radius:0 0 5px 5px;
+	border: 1px solid #ffffff;
+	border-top:none;
+	background:#eee;
+	text-align:left;
+	text-shadow:1px 1px 0 #ffffff;
+}
+.description .details h4 {
+	font-size:140%;
+	margin:0;
+}
+.description .details p {
+	padding: 10px 0;
+}
+.description .reg {
+	font-size:10px;
+}
+.description .details a {
+	text-shadow:none;
+}
 
 .card {
 	border:1px solid #aaa;

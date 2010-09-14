@@ -2,10 +2,10 @@
 
 <div id="currentuser">
 <% if logged_in? %>
-
 <% else %>
-<p>Please</p>
+<div class="login">
+<p>Login to Twitter to play</p>
 <%= link_to  image_tag( 'Sign-in-with-Twitter-darker.png', { :alt => 'Sign-in With Twitter' } ), new_member_path  %>
-<p>To enter the the game</p>
+</div>
 <% end %>
 </div>
